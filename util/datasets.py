@@ -6,12 +6,14 @@
 # ---------------------------------------------------------------
 
 """Code for getting the data loaders."""
+import sys
+sys.path.insert(1, '/Users/jasonhu/Documents/GitHub/LSGM/thirdparty/')
 
 import torch
 import torchvision.datasets as dset
 import torchvision.transforms as transforms
-from util.lmdb_datasets import LMDBDataset
-from thirdparty.lsun import LSUN, LSUNClass
+from lmdb_datasets import LMDBDataset
+from lsun import LSUN, LSUNClass
 import os
 import urllib
 from scipy.io import loadmat
@@ -292,5 +294,3 @@ def _data_transforms_lsun(size):
     ])
 
     return train_transform, valid_transform
-
-

@@ -58,7 +58,7 @@ from scipy import linalg
 from torch.nn.functional import adaptive_avg_pool2d
 from PIL import Image
 
-from fid.inception import InceptionV3
+from inception import InceptionV3
 
 parser = ArgumentParser(formatter_class=ArgumentDefaultsHelpFormatter)
 parser.add_argument('--batch-size', type=int, default=50,

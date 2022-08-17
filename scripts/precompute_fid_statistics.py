@@ -4,11 +4,15 @@
 # This work is licensed under the NVIDIA Source Code License
 # for LSGM. To view a copy of this license, see the LICENSE file.
 # ---------------------------------------------------------------
+import sys
+sys.path.insert(1, '/Users/jasonhu/Documents/GitHub/LSGM/fid/')
+sys.path.insert(1, '/Users/jasonhu/Documents/GitHub/LSGM/util/')
+
 import os
 import argparse
-from fid.fid_score import compute_statistics_of_generator, save_statistics
-from util.datasets import get_loaders_eval
-from fid.inception import InceptionV3
+from fid_score import compute_statistics_of_generator, save_statistics
+from datasets import get_loaders_eval
+from inception import InceptionV3
 from itertools import chain
 
 
